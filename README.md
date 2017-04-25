@@ -5,5 +5,6 @@ Here are the Max patches I use to interface with my modular. Maybe some of it wi
 
 <3
 
-Watch the jams live on Twitch: https://www.twitch.tv/charliehuge
-Or dig in the archives on YouTube: https://www.youtube.com/playlist?list=PL7kjAqBAetOnEaGd1UL5G_v9fruAxeKMN
+Watch the jams live on [Twitch](https://www.twitch.tv/charliehuge)
+
+Or dig in the archives on [YouTube](https://www.youtube.com/playlist?list=PL7kjAqBAetOnEaGd1UL5G_v9fruAxeKMN)
