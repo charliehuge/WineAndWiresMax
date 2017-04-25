@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
+		"rect" : [ 34.0, 79.0, 970.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -64,19 +64,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 963.285706, 622.0, 55.0, 22.0 ],
-					"style" : "",
-					"text" : "synclfo~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
@@ -98,20 +85,6 @@
 					"patching_rect" : [ 1140.285645, 400.0, 130.0, 130.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 56.041138, 222.0, 322.0, 53.0 ],
-					"range" : [ 0.0, 0.5 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 957.0, 400.0, 130.0, 130.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 56.041138, 162.0, 322.0, 53.0 ],
 					"range" : [ 0.0, 0.5 ],
 					"style" : ""
 				}
@@ -159,42 +132,15 @@
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[13]",
 							"parameter_shortname" : "Multiplier",
-							"parameter_type" : 1,
-							"parameter_mmin" : 1.0,
-							"parameter_mmax" : 16.0,
-							"parameter_unitstyle" : 0
+							"parameter_type" : 0,
+							"parameter_mmin" : 0.125,
+							"parameter_mmax" : 8.0,
+							"parameter_unitstyle" : 1
 						}
 
 					}
 ,
 					"varname" : "live.dial[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 963.285706, 549.0, 44.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 5.857147, 165.0, 44.0, 47.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.dial[12]",
-							"parameter_shortname" : "Multiplier",
-							"parameter_type" : 1,
-							"parameter_mmin" : 1.0,
-							"parameter_mmax" : 16.0,
-							"parameter_unitstyle" : 0
-						}
-
-					}
-,
-					"varname" : "live.dial"
 				}
 
 			}
@@ -284,50 +230,6 @@
 					"patching_rect" : [ 199.857147, 494.0, 68.0, 22.0 ],
 					"style" : "",
 					"text" : "gen~ clock"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-10",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Euclid.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 772.714294, 573.0, 183.0, 57.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 195.041138, 96.0, 183.0, 57.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-11",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Euclid.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 581.857178, 573.0, 183.0, 57.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 5.857147, 96.0, 183.0, 57.0 ],
-					"viewvisibility" : 1
 				}
 
 			}
@@ -427,33 +329,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-15", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -481,47 +356,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 5 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 4,
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 3,
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"order" : 2,
@@ -551,16 +386,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 2,
-					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -574,7 +399,7 @@
 					"destination" : [ "obj-40", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -687,21 +512,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-6" : [ "live.dial[10]", "pulses", 0 ],
-			"obj-11::obj-7" : [ "live.dial[3]", "rotation", 0 ],
-			"obj-2::obj-6" : [ "live.dial[7]", "pulses", 0 ],
-			"obj-11::obj-6" : [ "live.dial[4]", "pulses", 0 ],
-			"obj-2::obj-7" : [ "live.dial[6]", "rotation", 0 ],
-			"obj-29" : [ "live.dial[14]", "Multiplier", 0 ],
-			"obj-10::obj-5" : [ "live.dial", "steps", 0 ],
-			"obj-1::obj-5" : [ "live.dial[11]", "steps", 0 ],
+			"obj-27" : [ "live.dial[13]", "Multiplier", 0 ],
 			"obj-2::obj-5" : [ "live.dial[8]", "steps", 0 ],
-			"obj-12" : [ "live.dial[12]", "Multiplier", 0 ],
-			"obj-10::obj-6" : [ "live.dial[1]", "pulses", 0 ],
-			"obj-10::obj-7" : [ "live.dial[2]", "rotation", 0 ],
+			"obj-29" : [ "live.dial[14]", "Multiplier", 0 ],
+			"obj-1::obj-5" : [ "live.dial[11]", "steps", 0 ],
+			"obj-2::obj-7" : [ "live.dial[6]", "rotation", 0 ],
+			"obj-2::obj-6" : [ "live.dial[7]", "pulses", 0 ],
 			"obj-1::obj-7" : [ "live.dial[9]", "rotation", 0 ],
-			"obj-11::obj-5" : [ "live.dial[5]", "steps", 0 ],
-			"obj-27" : [ "live.dial[13]", "Multiplier", 0 ]
+			"obj-1::obj-6" : [ "live.dial[10]", "pulses", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
